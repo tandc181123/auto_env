@@ -6,8 +6,8 @@ cd_func() {
     builtin cd "$@"
     if [[ -f ".env" ]]; then
         source .env
-        switch
     fi
+    switch
 }
 
 switch() {
