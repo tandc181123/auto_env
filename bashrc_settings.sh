@@ -15,7 +15,7 @@ switch() {
         if [[ "$(pwd)" != "${FOLDER_PATH}" && ! "$(pwd)" =~ ^"${FOLDER_PATH}/".* ]]; then
             deactivate
         fi
-    elif [[ -z "${VIRTUAL_ENV}" ]]; then
+    elif [[ -z "${VIRTUAL_ENV}" && -n "${FOLDER_PATH}" ]]; then
         if [[ "$(pwd)" == "${FOLDER_PATH}" || "$(pwd)" =~ ^"${FOLDER_PATH}/".* ]]; then
             source "${FOLDER_PATH}/venv/bin/activate"
         fi
