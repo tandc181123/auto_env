@@ -13,7 +13,7 @@ To install Envease for Bash, follow these steps:
 1. Clone the repository to your local machine:
 
 ```bash
-   git clone https://github.com/yourusername/envease.git
+   git clone https://github.com/tandc181123/envease.git
 ```
 
 2. Change into the cloned directory:
