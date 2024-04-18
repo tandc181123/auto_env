@@ -36,6 +36,17 @@ To install Envease for Bash, follow these steps:
 
 This will add the necessary source command to your Bash configuration file (`.bashrc`) to enable Envease.
 
+### Setting up the `.env` file
+
+To configure Envease, create a `.env` file in your project directory and add the following lines:
+
+```bash
+   folder_path="$(pwd)" # Set the folder path to the current directory
+   virtual_env_name="venv" # Set the name of your virtual environment folder
+```
+
+Make sure to replace `venv` with the name of your virtual environment folder.
+
 ## Usage
 
 To use Envease, simply navigate to your project directory containing the `.env` file. Envease will automatically activate the specified virtual environment when you enter the directory using the `cd` command.
