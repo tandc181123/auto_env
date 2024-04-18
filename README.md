@@ -1,10 +1,12 @@
 # Envease - Environment Management Tool
 
-Envease is a tool that simplifies environment management by automatically activating and deactivating virtual environments based on a `.env` file in your project directory.
+Envease simplifies environment management for Python projects by automatically handling virtual environments based on a `.env` file.
 
-## Introduction
+### Key Features
 
-Envease simplifies the process of managing environments for your projects. By placing a `.env` file in your project directory and specifying the folder path and virtual environment name inside, Envease will automatically activate the specified virtual environment when you navigate to that directory using the `cd` command.
+-   Automatic activation and deactivation of virtual environments
+-   Easy configuration via the `.env` file
+-   Simplifies environment management for Python projects
 
 ## Installation Guide
 
@@ -63,12 +65,7 @@ Make sure to replace venv with the name of your virtual environment folder.
 
 ## Usage
 
-To use Envease, simply navigate to your project directory containing the `.env` file. Envease will automatically activate the specified virtual environment when you enter the directory using the `cd` command.
-
-## Features
-
--   Automatically activates a virtual environment based on the `.env` file in your project directory.
--   Simplifies environment management for projects by managing the activation and deactivation of the virtual environment.
+Simply navigate to your project directory with the .env file. Envease will automatically activate the virtual environment when you use the cd command.
 
 ## Contribution Guidelines
 
