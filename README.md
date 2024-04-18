@@ -8,44 +8,58 @@ Envease simplifies the process of managing environments for your projects. By pl
 
 ## Installation Guide
 
-To install Envease for Bash, follow these steps:
+### Option 1: Clone from Repository
 
-1. Clone the repository to your local machine:
-
-```bash
-   git clone https://github.com/tandc181123/envease.git
-```
-
-2. Change into the cloned directory:
+Clone the repository to your local machine:
 
 ```bash
-   cd envease
+    git clone https://github.com/tandc181123/envease.git
 ```
 
-3. Give execute permission to the `write_to_bashrc.sh` script:
+### Option 2: Download from Releases
 
-```bash
-   chmod +x write_to_bashrc.sh
-```
+Alternatively, you can download Envease from the [Releases](https://github.com/tandc181123/envease/releases) page. Simply select the desired version, download the corresponding archive file, and extract it to your preferred location.
 
-4. Execute the `write_to_bashrc.sh` script:
+### Setting up Envease
 
-```bash
-   ./write_to_bashrc.sh
-```
+1. Change into the project directory:
 
-This will add the necessary source command to your Bash configuration file (`.bashrc`) to enable Envease.
+    Git clone:
 
-### Setting up the `.env` file
+    ```bash
+       cd envease
+    ```
 
-To configure Envease, create a `.env` file in your project directory and add the following lines:
+    Releases:
+
+    ```bash
+       cd envease-version
+    ```
+
+2. Give execute permission to the write_to_bashrc.sh script:
+
+    ```bash
+       chmod +x write_to_bashrc.sh
+    ```
+
+3. Execute the write_to_bashrc.sh script:
+
+    ```bash
+       ./write_to_bashrc.sh
+    ```
+
+4. This will add the necessary source command to your Bash configuration file (.bashrc) to enable Envease.
+
+### Setting up the .env file
+
+To configure Envease, create a .env file in your project directory and add the following lines:
 
 ```bash
    folder_path="$(pwd)" # Set the folder path to the current directory
    virtual_env_name="venv" # Set the name of your virtual environment folder
 ```
 
-Make sure to replace `venv` with the name of your virtual environment folder.
+Make sure to replace venv with the name of your virtual environment folder.
 
 ## Usage
 
